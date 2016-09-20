@@ -1,0 +1,122 @@
+body{
+  background-color:#232323;
+  font-family: "Montserrat","Avenir";
+}
+.square{
+  width:30%;
+  padding-bottom: 30%;
+  background-color:purple;
+  float: left;
+  margin:1.66%;
+  border-radius: 10%;
+  cursor: pointer;
+  -moz-transition:background-color  0.8s;
+  -webkit-transition:background-color  0.8s;
+  transition:background-color  0.8s;
+}
+#container{
+  max-width: 600px;
+  margin: 20px auto;
+
+}
+h1{
+  color:white;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+h1#GuessColor{
+  font-size: 3em;
+}
+header{
+  background-color: steelblue;
+  padding: 10px;
+
+}
+div{
+  color:white;
+}
+
+
+button{
+  background-color: inherit;
+  border: none;
+  height: inherit;
+  font-weight: bold;
+  color:steelblue;
+  text-transform: uppercase;
+  -moz-transition:all 0.3s;
+  -webkit-transition:all  0.3s;
+  transition:all 0.3s;
+  outline: none;
+}
+button:hover{
+  background-color: steelblue;
+  color:white;
+  cursor: pointer;
+}
+
+#message{
+  display: inline-block;
+  width: 20%;
+  min-width: 80px;
+}
+
+#stripe{
+  background-color: white;
+  height: 30px;
+  text-align: center;
+  color:black;
+
+}
+.selected,
+button:active{
+  background-color: steelblue;
+  color: white;
+}
+
+#help{
+ background-color:white;
+  padding:10px;
+  border-radius:15%;
+  float:right;
+  position: relative;
+  color:steelblue;
+  top:-30px;
+  border:1px solid steelblue;
+}
+#help:hover{
+  color:steelblue;
+}
+#help-div{
+  width:80%;
+  background-color: antiquewhite;
+  min-height: 40px;
+  position: absolute;
+  top:-1000px;
+  transition: all 0.7s;
+  
+}
+@media screen and (max-width:600px){
+  h1{
+    
+    line-height: 1.1;
+    font-size: 1.2em;
+  
+  }
+  #stripe{
+    height: 40px;
+  }
+  h1#GuessColor{
+    font-size: 1.4em;
+  }
+  button{
+    font-size:8pt;   
+    float:left;
+  }
+  #message{    
+   padding-top:10px
+  }
+}
